@@ -1,0 +1,42 @@
+/**
+ * Acquia theme for reveal.js.
+ */
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #333333;
+$headingColor: #018dc7;
+
+$mainFontSize: 38px;
+$mainFont: "Helvetica Neue", helvetica, arial, "liberation sans", sans-serif;
+$headingFont: "Proxima Nova", proxima-nova, "Helvetica Neue", helvetica, arial, "liberation sans", sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: 600;
+$linkColor: #56c1f8;
+$linkColorHover: #018dc7;
+$selectionBackgroundColor: rgba(lighten( $linkColorHover, 20% ), 0.5);
+$selectionColor: $headingColor;
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------

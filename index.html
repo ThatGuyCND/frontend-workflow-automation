@@ -1,411 +1,657 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+    <title>reveal.js – The HTML Presentation Framework</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
-
-	<body>
-
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment fade-up">fade-up (also down, left and right!)</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
+    <style>
+      .reveal .slide__title--is-over-image,
+      .reveal .slide__title--is-over-image--reverse {
+        text-shadow: 6px 6px 16px #000;
       }
-    }
+      .reveal .slide__title--is-over-image--reverse {
+        color: #111;
+      }
+
+      .reveal .menu__resources {
+        margin-left: 0;
+        padding-left: 0;
+        list-style: none outside none;
+      }
+
+      .reveal pre {
+        margin: 0 auto;
+      }
+
+      .reveal img.task-runner {
+        max-width: 25%;
+        height: auto;
+      }
+    </style>
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+        <section id="welcome">
+          <h1 class="slide__title presentation__title">Front-end Workflow Automation</h1>
+        </section>
+
+        <section id="author">
+          <img src="assets/images/erik-bowtie_square.jpg" alt="BLadwin in a bowtie" style="max-width: 25%; height: auto; border: 8px solid white; border-radius: 100%;">
+          <h2>Erik Baldwin</h2>
+          <p>Yo! I'm Erik. I like Drupal. I work at Acquia. I live in Portland, OR. I own and manage CLoud NYNE Design. I enjoy teaching; hope you enjoy learning.</p>
+          <ul>
+            <li class="fragment fade-in" data-fragment-index="1">8 year Drupal'r</li>
+            <li class="fragment fade-in" data-fragment-index="2">Beer[d] enthusiast</li>
+            <li class="fragment fade-in" data-fragment-index="3">Opinionated <span class="fragment fade-in" data-fragment-index="4">&hellip; about what matters</span></li>
+          </ul>
+        </section>
+
+        <section id="agenda">
+          <h2 class="slide__title">Agenda</h2>
+          <ul class="menu__agenda">
+            <li class="agenda__item">
+              <a href="#/fundamentals" class="agenda__item--link">Fundamentals</a>
+            </li>
+            <li class="agenda__item">
+              <a href="#/nodejs" class="agenda__item--link">NodeJS</a>
+            </li>
+            <li class="agenda__item">
+              <a href="#/workflow" class="agenda__item--link">Front-end Dev Workflow Benefits</a>
+            </li>
+            <li class="agenda__item">
+              <a href="#/scaffolding" class="agenda__item--link">Scaffolding</a>
+            </li>
+            <li class="agenda__item">
+              <a href="#/dependency-management" class="agenda__item--link">Dependency Management</a>
+            </li>
+            <li class="agenda__item">
+              <a href="#/build-automation" class="agenda__item--link">Build Automation</a>
+            </li>
+            <li class="agenda__item">
+              <a href="#/build-automation" class="agenda__item--link">Interactive Demo</a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+
+          <section>
+            <h2 class="slide__title">Build Tasks</h2>
+            <ul>
+              <li>Automation</li>
+              <li>Minification</li>
+              <li>Compilation</li>
+              <li>Unit testing</li>
+              <li>Linting</li>
+              <li>Efficient</li>
+              <li>Live feedback</li>
+              <li>Dependency injection and management</li>
+              <li>&hellip; and many more</li>
+            </ul>
+          </section>
+
+          <section>
+
+            <blockquote>“The more complex and self-sufficient the automated system, the more difficult it will be understand and operate.” <br><br>
+              <small><b>The Paradoxes and Ironies of Automation</b>, David Wentzel. <br>
+              http://www.davewentzel.com/content/paradoxes-and-ironies-automation</small>
+            </blockquote>
+
+            <aside class="notes">
+              The key to a successful automated system is one that: <br>
+              - Takes advantage of the natural interface presented by it’s component parts <br>
+              - breaks down complexity into simplicity <br>
+              - makes compromises intentionally, not circumstantially <br><br>
+              - <i>natural interface:</i> A lot of tools already come with CLI integration - why are you using a GUI? <br>
+              - <i>complexity:</i> Good complex tasks are comprised by many well-defined simple tasks. <br>
+              - <i>intentional compromise:</i> simpler mental models instead of performance; less code, but less extensible <br>
+            </aside>
+
+          </section>
+
+        </section>
+
+        <section id="fundamentals" class="slide__section__masthead">
+
+          <section>
+            <h1 class="slide__title--section">Front-end Build Fundamentals</h1>
+            <aside class="notes">
+              Back in the day, you’d throw an html page together, link to it in the primary navigation at the top of the page, make sure it looked good with some inline styles, and then maybe add some pizzaz to the page with some of that fancy new-fangled ECMAScript. <br>
+              NOT ANY MORE!!! those days are pretty much gone, unless you're building a WordPress site.
+            </aside>
+          </section>
+
+          <section>
+            <h2 class="slide__title">Typical front-end workflow</h2>
+
+            <aside class="notes">
+              Today's typical workflow is cumbersome and tedious. In the past, did the lack of automation make what we do seem harder than it actually is? possibly.
+            </aside>
+          </section>
+
+          <section>
+            <aside class="notes">
+              We repeat this process every time we start a new project. <br>
+              How long does this normally take to setup? <br>
+               - a couple hours? <br>
+               - an entire day? <br>
+               - longer? <br><br>
+
+              It can be really hard to start a new project, unless you're one to copy your previous work and start stripping it down. <br><br>
+
+              All of these things, if they’re not automated THEY ARE wasting your time - think of all the other tasks you could be completing — like writing that feature you’re trying to setup the directory structure for.
+
+            </aside>
+
+            <table>
+              <tr>
+                <th>Setup</th>
+                <th>Develop</th>
+                <th>Build</th>
+              </tr>
+              <tr>
+                <td>Project Structure</td>
+                <td>Watch JS &amp; CSS</td>
+                <td>Unit Testing<br>Jasmine/Karma/QUnit</td>
+              </tr>
+              <tr>
+                <td>Download Templates</td>
+                <td>Abstractions:<br>HAML/Jade<br>Sass/Less/Stylus<br>CoffeeScript<br></td>
+                <td>Compile everything</td>
+              </tr>
+              <tr>
+                <td>Download Libraries</td>
+                <td>Live Reload changes</td>
+                <td>Minify, Concatenate, and Obfuscate</td>
+              </tr>
+              <tr>
+                <td>Download Frameworks</td>
+                <td>Code Analysis<br>JS &amp; CSS linting</td>
+                <td>Image Optimization<br>Performance testing</td>
+              </tr>
+            </table>
+          </section>
+
+          <section data-background="assets/backgrounds/morpheus-cat.jpg">
+            <h1 class="slide__title--is-over-image">What if I told you</h1> <br><br><br><br><br><br>
+            <h3 class="slide__title--is-over-image">you could do all that in < 10 minutes?</h3>
+
+            <aside class="notes">
+              What if I told you that you could get all that done in less than 10 minutes? Well, before I tell you how, let's go through the tools that will help us get there.
+            </aside>
+          </section>
+
+        </section>
+
+        <section id="nodejs" class="slide__section__masthead">
+
+          <section data-background="assets/backgrounds/nodejs.png">
+            <br><br><br><br><br><br><br>
+            <h3 class="fragment fade-in slide__title--sub slide__title--is-over-image">we're gonna need a bigger /usr/bin</h3>
+          </section>
+
+          <section>
+            NodeJS is NOT server-side JS. <br><br>
+            <span class="fragment fade-in">NodeJS is a stand-alone javascript runtime that is powered by V8, Chrome’s JavaScript engine</span>
+
+            <aside class="notes">
+               - NodeJS is a giant ecosystem of JS tooling <br>
+               - NodeJS is a platform or an environment that let us run Javascript in our system/machine rather than the browser. <br>
+               - Although it’s main purpose is to serve as a backend for web applications,  developers quickly adopted it as a quick and easy solution for scripting.
+            </aside>
+          </section>
+
+          <section>
+            <h4>Node is typically used in one of two ways:</h4><br>
+            <ol>
+              <li class="fragment fade-in" data-fragment-index="1">Build Utilities: <span class="fragment fade-in" data-fragment-index="2">things that help one build front-end applications</span></li>
+              <li class="fragment fade-in" data-fragment-index="3">Build Web Server: <span class="fragment fade-in" data-fragment-index="4">Backend server-side development</span></li>
+            </ol>
+
+            <aside class="notes">
+              Web Server: think something like a JS SDK for testing a RAML spec of creating dummy REST end-points.
+            </aside>
+          </section>
+
+          <section data-background="assets/backgrounds/npm.jpg">
+            <aside class="notes">
+              NPM is the package manager for NodeJS. It is bundled and installed automatically with the environment. NPM runs through the command line and allows users to install NodeJS applications, packages or utilities that are available on the NPM registry.
+            </aside>
+          </section>
+
+        </section>
+
+        <section id="workflow">
+
+          <section>
+            <h1 class="slide__title">Front-end development workflow</h1>
+          </section>
+
+          <section data-background="#1A3D6D">
+            <h2 class="slide__title">Helps you get started</h2>
+          </section>
+
+          <section data-background="#7DA41A">
+            <h2 class="slide__title">maintains dependencies</h2>
+          </section>
+
+          <section data-background="#F37D26">
+            <h2 class="slide__title">enforces best practices</h2>
+          </section>
+
+          <section data-background="#51356F">
+            <h2 class="slide__title">prepares tooling</h2>
+          </section>
+
+          <section data-background="#499DD8">
+            <h2 class="slide__title">fights regressions</h2>
+          </section>
+
+          <section data-background="#F2B833">
+            <h2 class="slide__title">eases the release process</h2>
+          </section>
+
+        </section>
+
+        <section id="scaffolding" class="slide__section__masthead">
+
+          <section data-background="assets/backgrounds/yeoman-logo.jpg">
+
+            <aside class="notes">
+               - Yeoman is an open source client-side development stack, consisting of tools and frameworks intended to help developers quickly kickstart and build high quality web applications. <br>
+               - Yeoman runs as a CLI tool and is built on top of NodeJS. <br>
+               - filesystem structure via generator <br>
+               - static analysis <br>
+               - dependency management <br>
+               - development tools <br>
+               - provides a local development server <br>
+            </aside>
+
+          </section>
+
+          <section data-background="assets/backgrounds/yeoman-generator.png">
+
+            <h2 class="slide__title--is-over-image--reverse">Yeoman Generators</h2>
+            <br><br><br><br><br><br><br>
+
+            <aside class="notes">
+             - The idea behind a generator can be simplified to “sharing your ideas and best practices with others”. <br>
+             - You can generate files for your web app based on your specific configuration requests. <br>
+             - Generators aren't limited to front-end. <br>
+             - There are over 3000+ generators now available. <br>
+            </aside>
+
+          </section>
+
+          <section data-background="assets/backgrounds/yeoman-demo.png">
+
+            <h2 class="slide__title--is-over-image--reverse">Demo</h2>
+
+            <aside class="notes">
+             - install a generator <br>
+             - select some dependencies <br>
+             - choose some options <br>
+             - it creates the project <br>
+             - it downloads half the internet <br>
+             - it uses some dark magic <br>
+             - &hellip; and it takes care of everything <br>
+              Now it is your job to maintain this magical wonderland <br>
+            </aside>
+
+          </section>
+
+          <section>
+
+            <p>Learn more about Yeoman: </p>
+            <ul class="menu__resources">
+              <li><a href="http://yeoman.io/learning/index.html">http://yeoman.io/learning/index.html</a></li>
+              <li><a href="http://yeoman.io/codelab/index.html">http://yeoman.io/codelab/index.html</a></li>
+            </ul>
+
+          </section>
+
+        </section>
+
+        <section id="dependency-management" class="slide__section__masthead">
+
+          <section>
+
+            <h1 class="slide__title">Dependency Management</h1>
+
+          </section>
+
+          <section data-background="assets/backgrounds/bower.png">
+
+            <aside class="notes">
+              - Optimized for client-side <br>
+              - requires NodeJS & GIT <br>
+              - Supports a flat dependency model <br>
+            </aside>
+
+          </section>
+
+          <section>
+
+            <h2 class="slide__title">Bower Functions</h2>
+            <div class="fragment" data-fragment-index="1"><pre><code class="shell">bower search &lt;name&gt;</code></pre></div> <br>
+            <div class="fragment" data-fragment-index="2"><pre><code class="shell">bower info &lt;name&gt;#&lt;version&gt; [&lt;property&gt;]</code></pre></div> <br>
+            <div class="fragment" data-fragment-index="3"><pre><code class="shell">bower init</code></pre></div> <br>
+            <div class="fragment" data-fragment-index="4"><pre><code class="shell">bower register &lt;name&gt; &lt;url&gt;</code></pre></div> <br>
+            <div class="fragment" data-fragment-index="5"><pre><code class="shell">bower link</code></pre></div> <br>
+            <div class="fragment" data-fragment-index="6"><pre><code class="shell">bower link &lt;name&gt;</code></pre></div> <br>
+
+            <aside class="notes">
+              - <i>search</i>: let's you search for a specific package using a string<br>
+              - <i>info</i>: displays overall information of a package or of a particular version.<br>
+              - <i>init</i>: interactively create a bower.json file<br>
+              - <i>register</i>: register a package<br>
+              - <i>link</i>: two step process. allows a local development version of a package to be symlinked globally. executing bower link &lt;name&gt; will create a link in the components directory of the previously created link.<br>
+            </aside>
+
+          </section>
+
+          <section>
+
+            <h2 class="slide__title">.bowerrc</h2>
+
+            <pre><code class="json">
+{
+  "directory": "app/components/",
+  "analytics": false,
+  "timeout": 300000,
+  "registry": {
+    "search": [
+      "https://my-bower-server.local",
+      “https://bower.herokuapp.com”
+    ]
   }
 }
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+            </code></pre>
 
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
+            <aside class="notes">.bowerrc allows you to configure the local app and environment settings.</aside>
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+          </section>
 
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
+          <section>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
+            <h1 class="slide__title">bower_components directory</h1>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+            <aside class="notes">
+              - Usually gets the dependency’s entire GitHub repo. <br>
+              - Sometimes results in positive discovery  (Hey, look!) <br>
+              - Empowered to use whatever you need. <br>
+              - Many ways to integrate needed files into your project. <br>
+              - Add bower_components to .gitignore! (just do it! stop asking questions!) <br>
+            </aside>
 
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
+          </section>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
+          <section>
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
+            <h2 class="slide__title">Prod or Dev?</h2>
 
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
+            <p>
+              <pre><code class="shell">
+# install for production use.
+$  bower install jquery --save
+              </code></pre>
+            </p>
 
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+            <p>
+              <pre><code class="shell">
+# Install for testing, debugging, development purposes only.
+$  bower install modernizr --save-dev
+              </code></pre>
+            </p>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
+            <aside class="notes">
+              - using the `save` flag when installing a dependency marks that dependency to always be available, which is typically reserved for production use. <br>
+              - using the `save-dev` flag when installing a dependency is intended for development, debugging, and testing purposes only <br>
+            </aside>
 
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
+          </section>
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
+          <section>
 
-			</div>
+            <h2 class="slide__title">Semantic Versioning</h2>
 
-		</div>
+            <p>Majow.Minor.patch</p>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+            <div class="fragment fade-in" data-fragment-index="1"><i>strict:</i> 1.9.3</div>
+            <div class="fragment fade-in" data-fragment-index="2"><i>close to:</i> ~1.9.3</div>
+            <div class="fragment fade-in" data-fragment-index="3"><i>simple:</i> >=1.9.3</div>
+            <div class="fragment fade-in" data-fragment-index="4"><i>compatible with:</i> ^1.9.3</div>
 
-		<script>
+            <aside class="notes"></aside>
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+          </section>
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+          <section data-background="assets/backgrounds/npm.jpg">
+            <aside class="notes">
+              - Optimized server-side <br>
+              - Packages are usually CommonJS Modules <br>
+              - Supports nested dependencies <br>
+              - `npm link` is like bower link, but for NPM packages <br>
+            </aside>
+          </section>
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+        </section>
 
-		</script>
+        <section>
 
-	</body>
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Every week someone who doesn&#39;t understand Make writes a new build system in JavaScript. <a href="https://twitter.com/hashtag/gruntjs?src=hash">#gruntjs</a> <a href="https://twitter.com/hashtag/gearjs?src=hash">#gearjs</a> <a href="https://twitter.com/hashtag/gulpjs?src=hash">#gulpjs</a> <a href="https://twitter.com/hashtag/broccolijs?src=hash">#broccolijs</a>. Laugh or cry?</p>&mdash; Aslak Hellesøy (@aslak_hellesoy) <a href="https://twitter.com/aslak_hellesoy/status/435506106496851968">February 17, 2014</a></blockquote>
+          <!-- <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+
+        </section>
+
+        <section id="build-automation" class="slide__section__masthead">
+
+          <section>
+
+            <h1 class="slide__title--section">Build Automation</h1>
+
+          </section>
+
+          <section>
+
+            <h2 class="slide__title">Task Runners</h2>
+
+            <img src="assets/images/grunt.png" alt="Grunt" class="task-runner fragment fade-in" data-fragment-index="1">
+            <img src="assets/images/gulp.jpg" alt="Gulp" class="task-runner fragment fade-in" data-fragment-index="2">
+            <img src="assets/images/broccoli.png" alt="Broccoli" class="task-runner fragment fade-in" data-fragment-index="3">
+
+            <aside class="notes">
+              - and last week's old task runner <br>
+              - and next week's new task runner <br>
+              - etc, etc, etc <br>
+            </aside>
+
+          </section>
+
+          <section>
+
+            <h1 class="slide__title">What's the difference?</h1>
+
+          </section>
+
+          <section data-background="assets/backgrounds/grunt.jpg">
+
+            <div class="fragment fade-in">
+              <pre><code class="json">
+grunt.initConfig({
+  lint: {
+    src: 'src/&lt;%= pkg.name %&gt;.js'
+  },
+  concat: {
+    src: [
+      '&lt;banner:meta.banner&gt;' ,
+      '&lt;file_strip_banner:src/&lt;%= pkg.name %&gt;.js>'
+    ],
+    dest: '&lt;%= pkg.name %&gt;.js'
+  }
+});
+              </code></pre>
+            </div>
+
+            <aside class="notes">
+              - Grunt is better at managing configuration, but it’s pretty damn slow <br>
+              - Grunt is a bit older too so it’s ecosystem is a bit more mature. <br>
+              - Configuration over code
+            </aside>
+
+          </section>
+
+          <section data-background="assets/backgrounds/gulp.jpg">
+
+            <div class="fragment fade-in">
+              <pre><code class="javascript">
+gulp.src('src/main.mycss' )
+  .pipe(stylus())
+  .pipe(rename({ ext: 'css' }))
+  .pipe(autoprefixer())
+  .pipe(cssmin())
+  .pipe(header( '/* All Right Reserved */' ))
+  .pipe(gulp.dest( 'dist'));
+              </code></pre>
+            </div>
+
+            <aside class="notes">
+              - Gulp is written in JS and is stupid easy to use. <br>
+              - If you’re familiar with using the pipe symbol in your CLI, then you’ll immediately get what Gulp is doing. <br>
+              - Code over config <br>
+              - Start with a _thing_ and do a whole bunch of other things to it. <br>
+              - Gulp is truly asynchronous because it uses NodeJS streams. <br>
+              - simple API <br>
+                - `gulp.task` <br>
+                - `gulp.src` <br>
+                - `gulp.dest` <br>
+                - `gulp.watch` <br>
+              - less I/O operations as most piped streams are processed in memory. <br>
+            </aside>
+
+          </section>
+
+          <section>
+            <h2 class="slide__title">The Gulp Task</h2>
+
+            <div class="fragment fade-in">
+              <div class="fragment fade-out">
+                <pre><code class="javascript">
+  gulp.task(name [,dep],fn)
+                </code></pre>
+              </div>
+            </div>
+
+            <div class="fragment fade-in">
+              <pre><code class="javascript">
+gulp.task(’minify',[‘jshint’],function() {
+  return gulp.src('./src/**/*.js’)
+    .pipe(concat(‘all.js’))
+    .pipe(uglify())
+    .pipe(gulp.dest(‘./build/’));
+});
+              </code></pre>
+            </div>
+
+            <aside class="notes">
+              - <i>name:</i> name of the task we want to register <br>
+              - <i>dep(optional):</i> task dependencies to run before this task <br>
+              - <i>fn:</i> a callback function that returns a Gulp stream <br>
+            </aside>
+
+          </section>
+
+        </section>
+
+        <section>
+          <h1 class="slide__title">DEMO!!!</h1>
+        </section>
+
+        <section id="social-media">
+          <img src="assets/images/beard.jpg" alt="just a dewd and his beard" style="max-width: 25%; height: auto; border: 8px solid white; border-radius: 100%;">
+
+          <ul class="menu__social-media">
+            <li class="social-media__item">
+              <a href="http://drupal.org/u/bladwin" class="social-media__link"><span class="social-media__icon"></span>Drupal</a>
+            </li>
+            <li class="social-media__item">
+              <a href="http://github.com/ThatGuyCND" class="social-media__link"><span class="social-media__icon"></span>GitHub</a>
+            </li>
+            <li class="social-media__item">
+              <a href="http://twitter.com/CLoudNYNE" class="social-media__link"><span class="social-media__icon"></span>Twitter</a>
+            </li>
+            <li class="social-media__item">
+              <a href="http://fb.me/erik.baldwin" class="social-media__link"><span class="social-media__icon"></span>Facebook</a>
+            </li>
+          </ul>
+        </section>
+
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: false,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
 </html>
